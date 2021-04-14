@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>{{ title }}</title>
+	<link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}"/>
+
+	<!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Agro Harvest Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+	<style>
+		html {
+			font-size: 1rem;
+		}
+
+		@media (min-width: 576px) {
+			html {
+				font-size: 1.25rem;
+			}
+		}
+
+		@media (min-width: 768px) {
+			html {
+				font-size: 1.5rem;
+			}
+		}
+
+		@media (min-width: 992px) {
+			html {
+				font-size: 1.75rem;
+			}
+		}
+
+		@media (min-width: 1200px) {
+			html {
+				font-size: 2rem;
+			}
+
+			html {
+				font-size: 1rem;
+			}
+
+			h1 {
+				font-size: 1.2rem;
+			}
+
+			h2 {
+				font-size: 1.1rem;
+			}
+
+			@media (min-width: 768px) {
+				html {
+					font-size: 1.1rem;
+				}
+
+				h1 {
+					font-size: 1.3rem;
+				}
+
+				h2 {
+					font-size: 1.2rem;
+				}
+			}
+
+			@media (min-width: 991px) {
+				html {
+					font-size: 1.2rem;
+				}
+
+				h1 {
+					font-size: 1.5rem;
+				}
+
+				h2 {
+					font-size: 1.4rem;
+				}
+			}
+
+			@media (min-width: 1200px) {
+				html {
+					font-size: 1.2rem;
+				}
+
+				h1 {
+					font-size: 1.7rem;
+				}
+
+				h2 {
+					font-size: 1.6rem;
+				}
+			}
+
+		}
+	.header{
+    width: 100%;
+    
+    /* background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../static/images/2.jpg); */
+    background-position: center;
+    background-size:cover ;
+    position: relative;
+}
+	</style>
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	</body>
+	<!-- css files -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel='stylesheet' type='text/css' />
+	<!-- bootstrap css -->
+	<link href="{{ url_for('static', filename='css/style.css') }}" rel='stylesheet' type='text/css' />
+	<!-- custom css -->
+	<link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet"><!-- fontawesome css -->
+	<!-- //css files -->
+	<!-- <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon.png?') }}"> -->
+
+
+	<script type="text/JavaScript" src="{{ url_for('static', filename='scripts/cities.js') }}"></script>
+
+
+	<!-- google fonts -->
+	<link href="//fonts.googleapis.com/css?family=Thasadith:400,400i,700,700i&amp;subset=latin-ext,thai,vietnamese"
+		rel="stylesheet">
+	<!-- //google fonts -->
+
+	<style>
+		header {
+			background-color: rgba(30, 30, 30, 1);
+			margin-top: 0rem;
+			display: block;
+
+		}
+		.sub-footer{
+	margin-top: 80px;
+	padding:70px;
+	background-color: rgba(165, 206, 171, 0.7);
+	color: black;
+	text-align: justify;
+  }
+
+  .sub-footer{
+	margin-top: 180px;
+	padding:30px;
+	background-color: rgba(165, 206, 171, 0.7);
+	color: black;
+	text-align: justify;
+	font-weight: bold;
+	height: 490px;
+  }
+  
+  .sub-footer h1{
+	font-size: 18px;
+	text-align: left;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	font-weight: bold;
+  }
+  .sub-footer p{
+	font-size: 13px;
+	text-align: left;
+	font-weight: bold;
+  }
+  .sub-footer .fab{
+	margin-right:20px;
+	font-size: 18px;
+   }
+  .sub-footer hr{
+	 margin-top: 10px;
+   }
+  .sub-footer .copyright{
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+  }
+
+
+
+
+
+
+  .work{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+  }
+
+  .work-col{
+	flex-basis: 31%;
+	background: rgba(165, 206, 171, 0.7);
+	border-radius: 10px;
+	margin-bottom: 30px;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	margin-left: 10px;
+	margin-right: 5px;
+  }
+
+  .work-col:hover{
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+  }
+  
+
+
+
+	</style>
+</head>
+
+<body>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-light  static-top header" style="background-color: rgba(9, 131, 104, 0);">
+		<div class="container">
+			<a class="navbar-brand" href="{{ url_for('home') }}">
+				<img src="{{ url_for('static', filename='images/logo1.png') }}" style="width: 90px; height: 55px" alt="">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+				aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="{{ url_for('home') }}">Home
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{{ url_for('crop_recommend') }}">Crop</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{{ url_for('fertilizer_recommendation') }}">Fertilizer</a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+
+
+	{% block body %} {% endblock %}
+
+	<!-- footer -->
+	
+
+		<section class="sub-footer">
+			<div class="container">
+			<div class="row">
+			
+			  <div class="col-md-3 m-10">
+			
+				<b><h1>AgriFriend</h1></b>
+				<p style="font-weight: bold;">We use state-of-the-art machine learning and deep learning <br >technologies to help you guide through the entire farming process.<br> Make informed decisions to understand the demographics of your area, understand <br>the factors that affect your crop and keep them healthy for a super awesome successful yield.
+		  
+				</p>
+			  </div>
+			  <div class="col-md-3" style="font-weight: bold;">
+			
+				<b><h1>Thank You</h1></b>
+				<p>Dr Vishnu Srinivasa Murthy Y</p>
+				<p>Sr. Assistant Professor</p>
+				<p>VIT,Vellore</p>
+				<p>India</p>
+			  </div>
+			
+			  <div class="col-md-3">
+			
+				<b><h1>Contact Us</h1></b>
+				<p><i class="fas fa-map-marker-alt"></i> India</p>
+				<p><i class="fas fa-envelope-open-text"></i> agrifriend@gmail.com</p>
+			  </div>
+			
+			  <div class="col-md-3">
+			
+				<b><h1>Team AgriFriend</h1></b>
+				<p>Abhinash Kumar Ray</p>
+				<p>Rahul Biswas</p>
+				<p>Mohit Kumar</p>
+			  </div>
+			  </div>
+			  <hr>
+			  <p style="text-align: center;margin-top: 20px;background-color: black;font-weight: bold;height: 40px;">An Environment Intelligence Startup & all rights reserved by <strong>Team AgriFriend</strong> &copy; 2021</p>
+			  </div>
+				</section>
+
+
+	
+	<!-- //footer -->
+
+	<!-- move top icon -->
+	<a href="#home" class="move-top text-center"></a>
+	<!-- //move top icon -->
+</body>
+
+</html>
