@@ -86,7 +86,12 @@ def fertilizer_recommendation():
 
     return render_template('fertilizer.html', title=title)
 
-# render disease prediction input page
+
+
+@ app.route('/video',methods=['GET','POST'])
+def video_recommend():
+    title="VIDEO RECOMMENDATIONS"
+    return render_template('videos.html', title=title)
 
 
 
